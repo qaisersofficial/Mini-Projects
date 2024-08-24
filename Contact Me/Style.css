@@ -9,3 +9,8 @@ h1 {
     text-align: center;
     color: #a8a8a8;
  }
+ form {
+    width: 60%;
+    text-align: center;
+    margin: 20px 20%;
+}
