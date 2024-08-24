@@ -18,9 +18,9 @@ Here is a quick demo of the contact form:
 </br>
 <a href="output/test .png">Testing </a>
 </br>
-<a href="Output/test pass.png">Passed output</a>
+<a href="output/test pass.png">Passed output</a>
 </br>
-<a href="Output/message recieved on my email.png">Message Recieved on Email</a>
+<a href="output/message recieved on my email.png">Message Recieved on Email</a>
 </br>
 </hr>
 
