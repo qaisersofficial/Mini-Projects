@@ -15,6 +15,7 @@ body{
     color: #9c71a2;
     margin-top: 20px;
     margin-bottom: 0;
+    text-shadow: 3px 1px 19px rgba(156,113,162,1);
 }
 .img-container{
     margin: 100px 0 0 200px;
