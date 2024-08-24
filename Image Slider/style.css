@@ -17,3 +17,7 @@ body{
     border-radius: 10px;
     border: 2px solid rgb(216, 209, 209);
 }
+.img-container img:hover {
+    cursor: pointer;
+    width: 25%;
+}
