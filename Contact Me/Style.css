@@ -4,3 +4,8 @@ html, body {
   font-family: 'Merriweather', sans-serif;
   padding: 1em;
 }
+
+h1 {
+    text-align: center;
+    color: #a8a8a8;
+ }
