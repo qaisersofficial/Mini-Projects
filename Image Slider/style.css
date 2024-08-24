@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #310237;
+}
+.container {
+    width: 75%;
+   margin: 4% 0 3% 10%;
+  
+   border-radius: 30px;
+   box-shadow: #9c71a2 9px 15px 60px -22px, #9c71a2 0px 10px 5px -10px, #9c71a2 0px 0px 11px -3px inset;
+}
+.container h1 {
+    text-align: center;
+    color: #9c71a2;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-shadow: 3px 1px 19px rgba(156,113,162,1);
+}
+.img-container{
+    margin: 100px 0 0 200px;
+    width: 80%;
+    height: 450px;
+    padding: 10px;
+    margin-top: 0;
+}
+.img-container img {
+    width: 15%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+.img-container img:hover {
+    cursor: pointer;
+    width: 35%;
+    object-fit: inherit;
+    box-shadow: 5px 5px 35px #9c71a2;
+    margin-left: 0;
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .container{
+        width: 100%;
+       border-radius: 5px;
+       margin: 0;
+    }
+    .container h1{
+        margin-top: 0;
+    }
+    .img-container{
+        
+        width: 100%;
+        height:fit-content;
+        margin-left: 0;
+    }
+    .img-container img {
+        width: 90%;
+        object-fit: cover;
+        border-radius: 50px;
+        padding: 2%;
+        margin: 0.5%;
+    }
+}
