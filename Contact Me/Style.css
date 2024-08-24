@@ -42,3 +42,19 @@ h1 {
         height: 126px;
     }   
 }
+.half {
+    float: left;
+    width: 50%;
+    margin-bottom: 1em;
+  }
+  
+  .right { width: 40%;
+  margin-left: 10%; }
+  .left{
+      width: 45%;
+      #input-name{
+          margin-bottom: 13%;
+      }
+      
+  }
+  
