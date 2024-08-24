@@ -57,4 +57,9 @@ h1 {
       }
       
   }
-  
+  #input-submit:hover {
+    color: white; 
+    background: rgba(23, 23, 23, 0.858);
+    cursor: pointer;
+    font-size: 15px;    
+ }
