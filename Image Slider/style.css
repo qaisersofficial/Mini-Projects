@@ -3,24 +3,37 @@ body{
     padding: 0;
     background: #310237;
 }
+.container {
+    width: 75%;
+   margin: 4% 0 3% 10%;
+  
+   border-radius: 30px;
+   box-shadow: #9c71a2 9px 15px 60px -22px, #9c71a2 0px 10px 5px -10px, #9c71a2 0px 0px 11px -3px inset;
+}
+.container h1 {
+    text-align: center;
+    color: #9c71a2;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 .img-container{
     margin: 100px 0 0 200px;
-    width: 70%;
+    width: 80%;
     height: 450px;
-    justify-content: center;
-    gap: 10px;
+    padding: 10px;
+    margin-top: 0;
 }
 .img-container img {
-    width: 10%;
+    width: 15%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid rgb(216, 209, 209);
     transition: all ease-in-out 0.5s;
 }
 .img-container img:hover {
     cursor: pointer;
     width: 35%;
     object-fit: inherit;
-    box-shadow: 5px 5px 35px rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 35px #9c71a2;
+    margin-left: 0;
 }
