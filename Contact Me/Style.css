@@ -57,9 +57,34 @@ h1 {
       }
       
   }
+  /* Hover effect on submit button */
   #input-submit:hover {
     color: white; 
     background: rgba(23, 23, 23, 0.858);
     cursor: pointer;
     font-size: 15px;    
  }
+ /* media query */
+ @media  (max-width: 480px) {
+    .form-container{
+        display: block;
+        width: 80%;
+    }
+  .half {
+     width: 60%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+  .right{
+    width: 80%;
+   margin: 0;
+  } 
+  .left{
+    width: 80%;
+  } 
+  #input-submit{
+    width: 50%;
+    margin: auto;
+    border-radius: 100px;
+
+}}
