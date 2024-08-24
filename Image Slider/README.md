@@ -15,9 +15,13 @@ This project showcases a image slider created using only HTML and CSS. The image
 Here is a quick demo of the image slider:
 
 <a href="Output/webpage output.png">Initial Output</a>
+</br>
 <a href="Output/on hover.png">Output on Hover at image</a>
-<a href="Output/till ipad ouput.png">Final output on mobiles</a>
+</br>
 
+<a href="Output/till ipad ouput.png">Final output on mobiles</a>
+</br>
+</hr>
 ## Features
 
 - **Responsive Design**: Adjusts for different screen sizes using media queries.
