@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <h1>Feel Free To Send</h1>
+    <form
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      class="form-container"
+    >
+      <input
+        type="hidden"
+        name="access_key"
+        value="30af791f-2779-4ad2-84bb-80182de801c4"
+      />
+      <div class="half left form-container">
+        <input type="text" id="input-name" placeholder="Enter your good name" />
+        <input
+          type="email"
+          id="input-email"
+          placeholder="Please include your Email address"
+        />
+      </div>
+      <div class="half right form-container">
+        <textarea
+          name="message"
+          type="text"
+          id="input-message"
+          placeholder="Write anything for me"
+        ></textarea>
+      </div>
+      <input type="submit" value="Send Me" id="input-submit" />
+    </form>
+  </body>
+</html>
