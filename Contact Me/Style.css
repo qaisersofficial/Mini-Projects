@@ -30,5 +30,15 @@ h1 {
         background-color: white;
         color: black;
      }
-   
+     /* Submit button styles */
+     #input-submit {
+        color: black; 
+        background: white;
+        cursor: pointer;
+        transition: all ease-in-out 0.5s;
+        
+     }
+     textarea {
+        height: 126px;
+    }   
 }
