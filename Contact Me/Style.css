@@ -1,14 +1,17 @@
+/* importing the font family from google fonts*/
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
+/* Select html and body elements */
 html, body {
   background: black;
   font-family: 'Merriweather', sans-serif;
   padding: 1em;
 }
-
+/* Heading styles */
 h1 {
     text-align: center;
     color: #a8a8a8;
  }
+ /* Form styles */
  form {
     width: 60%;
     text-align: center;
