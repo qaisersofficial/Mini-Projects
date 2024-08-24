@@ -3,3 +3,17 @@ body{
     padding: 0;
     background: #310237;
 }
+.img-container{
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    justify-content: center;
+    gap: 10px;
+}
+.img-container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(216, 209, 209);
+}
