@@ -14,9 +14,9 @@ This project showcases a image slider created using only HTML and CSS. The image
 
 Here is a quick demo of the image slider:
 
-![Initial Image Slider ](<img src="images/Azra.jpeg" alt="Azra" />)
-![On Hover  ](output/on%20hover.png)
-![Till ipad design  ](output/till%20ipad%20ouput.png)
+<a href="Output/webpage output.png">Initial Output</a>
+<a href="Output/on hover.png">Output on Hover at image</a>
+<a href="Output/till ipad ouput.png">Final output on mobiles</a>
 
 ## Features
 
