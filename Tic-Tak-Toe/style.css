@@ -42,7 +42,7 @@ section{
         width: 90px;
         text-align: center;
         outline: none;
-        height: 25px;
+        height: 29.2px;
         margin-bottom: 39px;
         margin-top: 15px;
         font: inherit ;
@@ -60,8 +60,8 @@ section{
         color: #b13939;
         font-size: 20px;
         background: linear-gradient(225deg, #490505, #570606);
-        box-shadow:  -6px 6px 34px #480505,
-                     6px -6px 34px #5a0707;
+        box-shadow:  -6px 6px 150px #480505,
+                     6px -6px 80px #5a0707;
     }
     .status{
         color: #480505;
@@ -71,4 +71,6 @@ section{
         width: fit-content;
         margin: auto;
         padding: 0 15px;
+        box-shadow:  -6px -6px 134px #480505,
+             6px 6px 40px #5a0707;
     }
