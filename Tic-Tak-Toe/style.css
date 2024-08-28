@@ -4,3 +4,7 @@ body{
     background-image: url("./assets/backgroud-tik-tak-toe.jpg");
     background-size: cover ;
 }
+.heading{
+    padding-top: 30px;
+    color: #480505;
+}
