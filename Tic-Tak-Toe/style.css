@@ -28,6 +28,7 @@ section{
     width: 50px;
     height: 50px;
     cursor: pointer;
+    color: #480505;
     background: linear-gradient(315deg, #c4c2c2, #777777);
     box-shadow: inset -5px -5px 26px #b9b8b8,
                 inset 5px 5px 26px #8e8e8e;
@@ -61,4 +62,13 @@ section{
         background: linear-gradient(225deg, #490505, #570606);
         box-shadow:  -6px 6px 34px #480505,
                      6px -6px 34px #5a0707;
+    }
+    .status{
+        color: #480505;
+        font-size: inherit;
+        border: 1px dashed #480505;
+        border-radius: 20px;
+        width: fit-content;
+        margin: auto;
+        padding: 0 15px;
     }
