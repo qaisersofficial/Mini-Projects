@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url("./assets/backgroud-tik-tak-toe.jpg");
+    background-size: cover ;
+}
+.heading{
+    padding-top: 30px;
+    color: #480505;
+}
+section{
+    text-align: center;
+    border-radius: 20px;
+    width: 400px;
+    margin: auto;
+    background-color: #BC4A2F;
+    margin-top: 100px;
+    box-shadow: inset -21px 21px 28px #953a25,
+            inset 21px -21px 28px #e35a39;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 150px;
+    margin: 10px  120px;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: #480505;
+    background: linear-gradient(315deg, #c4c2c2, #777777);
+    box-shadow: inset -5px -5px 26px #b9b8b8,
+                inset 5px 5px 26px #8e8e8e;
+    line-height: 50px;
+    font-size: 30px;
+    }
+ 
+    .Reset{
+    
+        border: none;
+        width: 90px;
+        text-align: center;
+        outline: none;
+        height: 29.2px;
+        margin-bottom: 39px;
+        margin-top: 15px;
+        font: inherit ;
+        font-size: 18px;
+        color: white;
+        border-radius: 50px;
+        color: #480505;
+    background: #b13939;
+    box-shadow: inset -21px 21px 42px #983131,
+                inset 21px -21px 42px #ca4141;
+                
+    }
+    .Reset:hover{
+        cursor: pointer;
+        color: #b13939;
+        font-size: 20px;
+        background: linear-gradient(225deg, #490505, #570606);
+        box-shadow:  -6px 6px 150px #480505,
+                     6px -6px 80px #5a0707;
+    }
+    .status{
+        color: #480505;
+        font-size: inherit;
+        border: 1px dashed #480505;
+        border-radius: 20px;
+        width: fit-content;
+        margin: auto;
+        padding: 0 15px;
+        box-shadow:  -6px -6px 134px #480505,
+             6px 6px 40px #5a0707;
+    }
