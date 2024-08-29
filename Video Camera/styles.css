@@ -1,0 +1,21 @@
+body{
+    padding: 0;
+    background-image: radial-gradient(circle, rgb(3, 44, 84), rgb(25, 39, 43), rgb(33, 16, 51));
+}
+h1 {
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 4rem;
+    background: linear-gradient(40deg, #1201ae, #036dd7, #41009081, #16123f86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(40, 0, 151, 0.9));
+  }
+  div {  
+    text-align: center;
+  }
+  video{
+    width: 30%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
