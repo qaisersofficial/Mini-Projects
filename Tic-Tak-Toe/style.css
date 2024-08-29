@@ -20,6 +20,7 @@ section{
 }
 .container{
     display: grid;
+    gap: 3px; 
     grid-template-columns: repeat(3, auto);
     width: 150px;
     margin: 10px  120px;
