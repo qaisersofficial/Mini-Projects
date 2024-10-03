@@ -30,18 +30,39 @@
         justify-content: center; /* Center items horizontally */
         height: 100vh; /* Full viewport height */
       }
-      nav {
-        background-color: #1b33b9;
-        border-radius: 3px;
-        padding: 20px;
-        width: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        transition: width 0.6s linear;
-        overflow-x: hidden;
-      }
+    /* Style the navigation bar */
+    nav {
+      background-color: #1b33b9; /* Dark blue background color */
+      border-radius: 3px; /* Rounded corners */
+      padding: 20px; /* Padding inside the nav */
+      width: 80px; /* Initial width of the nav */
+      display: flex; /* Use flexbox layout */
+      align-items: center; /* Center items vertically */
+      justify-content: center; /* Center items horizontally */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+      transition: width 0.6s linear; /* Smooth transition for width change */
+      overflow-x: hidden; /* Hide horizontal overflow */
+    }
+
+    /* Style the navigation bar when active */
+    nav.active {
+      width: 350px; /* Expanded width of the nav */
+    }
+
+    /* Style the unordered list inside the nav */
+    nav ul {
+      display: flex; /* Use flexbox layout */
+      list-style-type: none; /* Remove default list styling */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+      width: 0; /* Initial width of the list */
+      transition: width 0.6s linear; /* Smooth transition for width change */
+    }
+
+    /* Style the unordered list inside the nav when active */
+    nav.active ul {
+      width: 100%; /* Expanded width of the list */
+    }
     </style>
   </head>
   <body>
