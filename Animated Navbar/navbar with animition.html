@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar with animation</title>
     <style>
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+      @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
-/* Apply box-sizing to all elements */
-* {
-    box-sizing: border-box;
-}
+      /* Apply box-sizing to all elements */
+      * {
+        box-sizing: border-box;
+      }
 
-/* Style the body */
-body {
-    background-color: #eafbff; /* Light blue background color */
-    margin: 0; /* Remove default margin */
-    background-image: linear-gradient(
-        to bottom,
-        #eafbff 0%, /* Light blue at the top */
-        #eafbff 50%, /* Light blue halfway */
-        #5290f9 50%, /* Dark blue starts halfway */
-        #5290f9 100% /* Dark blue at the bottom */
-    );
-    font-family: 'Muli', sans-serif; /* Use Muli font from Google Fonts */
-    align-items: center; /* Center items vertically */
-    display: flex; /* Use flexbox layout */
-    justify-content: center; /* Center items horizontally */
-    height: 100vh; /* Full viewport height */
-}
+      /* Style the body */
+      body {
+        background-color: #eafbff; /* Light blue background color */
+        margin: 0; /* Remove default margin */
+        background-image: linear-gradient(
+          to bottom,
+          #eafbff 0%,
+          /* Light blue at the top */ #eafbff 50%,
+          /* Light blue halfway */ #5290f9 50%,
+          /* Dark blue starts halfway */ #5290f9 100%
+            /* Dark blue at the bottom */
+        );
+        font-family: "Muli", sans-serif; /* Use Muli font from Google Fonts */
+        align-items: center; /* Center items vertically */
+        display: flex; /* Use flexbox layout */
+        justify-content: center; /* Center items horizontally */
+        height: 100vh; /* Full viewport height */
+      }
+      nav {
+        background-color: #1b33b9;
+        border-radius: 3px;
+        padding: 20px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: width 0.6s linear;
+        overflow-x: hidden;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="active" id="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <button class="icon" id="toggle">
-          <div class="line line1"></div>
-          <div class="line line2"></div>
-        </button>
-      </nav>
-</body>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="icon" id="toggle">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+      </button>
+    </nav>
+  </body>
 </html>
