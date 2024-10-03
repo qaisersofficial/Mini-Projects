@@ -30,38 +30,56 @@
         justify-content: center; /* Center items horizontally */
         height: 100vh; /* Full viewport height */
       }
-    /* Style the navigation bar */
-    nav {
-      background-color: #1b33b9; /* Dark blue background color */
-      border-radius: 3px; /* Rounded corners */
-      padding: 20px; /* Padding inside the nav */
-      width: 80px; /* Initial width of the nav */
-      display: flex; /* Use flexbox layout */
-      align-items: center; /* Center items vertically */
-      justify-content: center; /* Center items horizontally */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-      transition: width 0.6s linear; /* Smooth transition for width change */
-      overflow-x: hidden; /* Hide horizontal overflow */
-    }
+      /* Style the navigation bar */
+      nav {
+        background-color: #1b33b9; /* Dark blue background color */
+        border-radius: 3px; /* Rounded corners */
+        padding: 20px; /* Padding inside the nav */
+        width: 80px; /* Initial width of the nav */
+        display: flex; /* Use flexbox layout */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+        transition: width 0.6s linear; /* Smooth transition for width change */
+        overflow-x: hidden; /* Hide horizontal overflow */
+      }
 
-    /* Style the navigation bar when active */
-    nav.active {
-      width: 350px; /* Expanded width of the nav */
-    }
+      /* Style the navigation bar when active */
+      nav.active {
+        width: 350px; /* Expanded width of the nav */
+      }
 
-    /* Style the unordered list inside the nav */
-    nav ul {
-      display: flex; /* Use flexbox layout */
-      list-style-type: none; /* Remove default list styling */
-      padding: 0; /* Remove default padding */
-      margin: 0; /* Remove default margin */
-      width: 0; /* Initial width of the list */
-      transition: width 0.6s linear; /* Smooth transition for width change */
+      /* Style the unordered list inside the nav */
+      nav ul {
+        display: flex; /* Use flexbox layout */
+        list-style-type: none; /* Remove default list styling */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        width: 0; /* Initial width of the list */
+        transition: width 0.6s linear; /* Smooth transition for width change */
+      }
+      
+      /* Style the unordered list inside the nav when active */
+      nav.active ul {
+        width: 100%; /* Expanded width of the list */
+      }    
+    /* Style the list items inside the nav */
+    nav ul li {
+      transform: rotateY(0deg); /* Initial rotation */
+      opacity: 0; /* Initial opacity */
+      transition: transform 0.6s linear, opacity 0.6s linear; /* Smooth transition for transform and opacity */
     }
-
-    /* Style the unordered list inside the nav when active */
-    nav.active ul {
-      width: 100%; /* Expanded width of the list */
+    /* Style the list items inside the nav when active */
+    nav.active ul li {
+      opacity: 1; /* Fully visible */
+      transform: rotateY(360deg); /* Rotate 360 degrees */
+    }
+    /* Style the links inside the nav */
+    nav ul a {
+      position: relative; /* Position relative for potential absolute positioning of child elements */
+      color: white; /* White text color */
+      text-decoration: none; /* Remove underline from links */
+      margin: 0 10px; /* Margin on left and right */
     }
     </style>
   </head>
