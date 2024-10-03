@@ -136,6 +136,18 @@ nav.active .icon .line2 {
         <div class="line line2"></div>
       </button>
     </nav>
-
+    <script>
+        // Get the toggle button element by its ID
+        const toggle = document.getElementById('toggle');
+        
+        // Get the navigation bar element by its ID
+        const nav = document.getElementById('nav');
+        
+        // Add a click event listener to the toggle button
+        toggle.addEventListener('click', () => {
+          // Toggle the 'active' class on the navigation bar
+          nav.classList.toggle('active');
+        });
+    </script>
   </body>
 </html>
