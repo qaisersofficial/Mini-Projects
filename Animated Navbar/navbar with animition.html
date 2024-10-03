@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar with animation</title>
     <style>
-        
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    background-color: #eafbff; /* Light blue background color */
+    margin: 0; /* Remove default margin */
+    background-image: linear-gradient(
+        to bottom,
+        #eafbff 0%, /* Light blue at the top */
+        #eafbff 50%, /* Light blue halfway */
+        #5290f9 50%, /* Dark blue starts halfway */
+        #5290f9 100% /* Dark blue at the bottom */
+    );
+    font-family: 'Muli', sans-serif; /* Use Muli font from Google Fonts */
+    align-items: center; /* Center items vertically */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+}
     </style>
 </head>
 <body>
