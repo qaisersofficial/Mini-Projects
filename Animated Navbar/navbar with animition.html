@@ -20,8 +20,8 @@
           to bottom,
           #eafbff 0%,
           /* Light blue at the top */ #eafbff 50%,
-          /* Light blue halfway */ #5290f9 50%,
-          /* Dark blue starts halfway */ #5290f9 100%
+          /* Light blue halfway */ hsl(218, 93%, 65%) 50%,
+          /* Dark blue starts halfway */ hsl(218, 93%, 65%) 100%
             /* Dark blue at the bottom */
         );
         font-family: "Muli", sans-serif; /* Use Muli font from Google Fonts */
@@ -58,29 +58,69 @@
         width: 0; /* Initial width of the list */
         transition: width 0.6s linear; /* Smooth transition for width change */
       }
-      
+
       /* Style the unordered list inside the nav when active */
       nav.active ul {
         width: 100%; /* Expanded width of the list */
-      }    
-    /* Style the list items inside the nav */
-    nav ul li {
-      transform: rotateY(0deg); /* Initial rotation */
-      opacity: 0; /* Initial opacity */
-      transition: transform 0.6s linear, opacity 0.6s linear; /* Smooth transition for transform and opacity */
+      }
+      /* Style the list items inside the nav */
+      nav ul li {
+        transform: rotateY(0deg); /* Initial rotation */
+        opacity: 0; /* Initial opacity */
+        transition: transform 0.6s linear, opacity 0.6s linear; /* Smooth transition for transform and opacity */
+      }
+      /* Style the list items inside the nav when active */
+      nav.active ul li {
+        opacity: 1; /* Fully visible */
+        transform: rotateY(360deg); /* Rotate 360 degrees */
+      }
+      /* Style the links inside the nav */
+      nav ul a {
+        position: relative; /* Position relative for potential absolute positioning of child elements */
+        color: white; /* White text color */
+        text-decoration: none; /* Remove underline from links */
+        margin: 0 10px; /* Margin on left and right */
+      }
+    /* Style the icon button */
+    .icon {
+      background-color: #5390f9; /* Light blue background color */
+      border: 0; /* Remove default border */
+      cursor: pointer; /* Pointer cursor on hover */
+      padding: 0; /* Remove default padding */
+      position: relative; /* Position relative for child elements */
+      height: 30px; /* Fixed height */
+      width: 30px; /* Fixed width */
     }
-    /* Style the list items inside the nav when active */
-    nav.active ul li {
-      opacity: 1; /* Fully visible */
-      transform: rotateY(360deg); /* Rotate 360 degrees */
+    /* Remove outline when the icon button is focused */
+    .icon:focus {
+      outline: 0;
     }
-    /* Style the links inside the nav */
-    nav ul a {
-      position: relative; /* Position relative for potential absolute positioning of child elements */
-      color: white; /* White text color */
-      text-decoration: none; /* Remove underline from links */
-      margin: 0 10px; /* Margin on left and right */
-    }
+
+/* Style the lines inside the icon button */
+.icon .line {
+    background-color: #5290f9; /* Light blue color for the lines */
+    height: 2px; /* Fixed height for the lines */
+    width: 20px; /* Fixed width for the lines */
+    position: absolute; /* Absolute positioning */
+    top: 10px; /* Position from the top */
+    left: 5px; /* Position from the left */
+    transition: transform 0.6s linear; /* Smooth transition for transform */
+}
+/* Style the second line inside the icon button */
+.icon .line2 {
+    top: auto; /* Override top positioning */
+    bottom: 10px; /* Position from the bottom */
+}
+
+/* Style the first line inside the icon button when nav is active */
+nav.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px); /* Rotate and translate the line */
+}
+
+/* Style the second line inside the icon button when nav is active */
+nav.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px); /* Rotate and translate the line */
+}
     </style>
   </head>
   <body>
