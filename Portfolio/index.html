@@ -11,6 +11,17 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "u65EGTzMbC5Iz9DbO",
+      });
+   })();
+</script>
+<script src="sendMail.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -229,16 +240,17 @@
 
         <div class="contact__container bd-grid">
           <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
+            <input id="name" type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" id="email" placeholder="Email" class="contact__input" />
             <textarea
               name=""
-              id=""
+              id="message"
+              placeholder="Type your message here..."
               cols="0"
               rows="10"
               class="contact__input"
             ></textarea>
-            <input type="button" value="Send" class="contact__button button" />
+            <button class="contact__button button" onclick="sendMail()" >Send</button>
           </form>
         </div>
       </section>
